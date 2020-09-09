@@ -1,4 +1,4 @@
-<?
+<?php
 include_once($_SERVER['DOCUMENT_ROOT'].'/homework35/global_pass.php');
 
 $id = (int)$_GET['id'];
@@ -27,4 +27,5 @@ foreach($arr_info as $bla=>$blo){
 
 //var_dump($arr_info);
 
-echo json_encode($arr_info_new, JSON_UNESCAPED_UNICODE); 
+echo json_encode($arr_info_new, JSON_UNESCAPED_UNICODE);
+

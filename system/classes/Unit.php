@@ -18,7 +18,7 @@ abstract class Unit implements UnitActions
 		if(!$this->bdata){
 			$sql = $this->pdo->prepare("SELECT * FROM ".$this->setTable()." WHERE id='".$this->id."'");
 			$sql->execute();
-			$this->bdata = $sql->fetch(PDO::FETCH_LAZY);
+			$this->bdata = $sql->fetch(PDO::FETCH_OBJ);
 		}
 		return $this->bdata;  
     }
